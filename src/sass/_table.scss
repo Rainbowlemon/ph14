@@ -1,0 +1,33 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  padding: .3rem;
+}
+
+th {
+  text-align: left;
+  color: $text-color-dark;
+}
+
+thead tr + tr th {
+  border-top: 1px solid $border-color;
+}
+
+tbody tr:nth-child(odd) td {
+  background: $bg-light;
+}
+
+tfoot {
+  color: $text-color-light;
+  font-size: .95rem;
+  font-style: italic;
+  
+  td {
+    border-top: 1px dashed $border-color;
+  }
+}

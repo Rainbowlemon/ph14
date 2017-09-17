@@ -1,12 +1,12 @@
 {
   "name": "ph14",
   "version": "0.1.0",
-  "description": "A super-basic, classless CSS framework",
+  "description": "A super-basic, drop-in CSS framework using minimal classes",
   "devDependencies": {
     "gulp": "^3",
-    "gulp-sass": "^3",
     "gulp-autoprefixer": "^4",
     "gulp-clean-css": "^3",
+    "gulp-sass": "^3",
     "gulp-sourcemaps": "^2",
     "gulp-util": "^3"
   },
@@ -22,5 +22,8 @@
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/Rainbowlemon/ph14/issues"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
   }
 }
