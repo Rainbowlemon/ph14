@@ -1,0 +1,26 @@
+{
+  "name": "ph14",
+  "version": "0.1.0",
+  "description": "A super-basic, classless CSS framework",
+  "devDependencies": {
+    "gulp": "^3",
+    "gulp-sass": "^3",
+    "gulp-autoprefixer": "^4",
+    "gulp-clean-css": "^3",
+    "gulp-sourcemaps": "^2",
+    "gulp-util": "^3"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rainbowlemon/ph14.git"
+  },
+  "author": "Rainbowlemon",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Rainbowlemon/ph14/issues"
+  }
+}
