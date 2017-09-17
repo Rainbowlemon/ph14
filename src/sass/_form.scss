@@ -86,7 +86,8 @@ button,
   border: 0;
   outline: 0;
   background: $primary;
-  color: #fff;
+  color: #fff !important;
+  text-decoration: none !important;
   margin: 0 .2rem .2rem 0;
   box-shadow: 2px 2px darken($primary, 12%);
   border-radius: 3px;

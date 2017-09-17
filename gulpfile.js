@@ -6,6 +6,7 @@
 // Shared
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var rename = require('gulp-rename');
 
 // Sass
 var sass = require('gulp-sass');
@@ -41,11 +42,14 @@ gulp.task('sass', function(){
     .pipe(cleanCSS({
       debug: true
     }, function(details) {
-      console.log(details.name + ': ' + details.stats.originalSize);
-      console.log(details.name + ': ' + details.stats.minifiedSize);
+      gutil.log(gutil.colors.yellow('Minifying ' + details.name));
+      gutil.log('Original size: ' + gutil.colors.green(details.stats.originalSize) + ', reduced size: ' + gutil.colors.green(details.stats.minifiedSize));
+    }))
+    .pipe(rename({
+      suffix: '.min'
     }))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(cssDest));
+    .pipe(gulp.dest(cssDest))
 });
 
 
