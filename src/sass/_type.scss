@@ -12,3 +12,32 @@ h1,h2,h3,h4,h5,h6 {
 p {
   font-size: 1rem;
 }
+
+a {
+  text-underline-position: under;
+  text-decoration-skip: objects;
+  
+  &:link {
+    color: $primary;
+  }
+  
+  &:visited {
+    color: $visited;
+  }
+  
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  
+  &:focus {
+    background: lighten($primary, 40%);
+    outline: 2px solid lighten($primary, 40%);
+  }
+}
+
+code,
+kbd,
+samp {
+  color: #d41c78;
+}

@@ -1,0 +1,16 @@
+ol,
+ul {
+  list-style: disc;
+  list-style-position: outside;
+  margin: 1.4rem 0 1.4rem 1rem;
+  padding: 0;
+}
+
+nav ol,
+nav ul {
+  list-style: inherit;
+}
+
+li {
+  margin-bottom: .2rem;
+}
