@@ -14,7 +14,7 @@
   
 </head>
 <body>
-  <header role="banner" style="text-align: center;" class="ph14-section">
+  <header role="banner">
     <h1>
       <svg role="img" aria-label="PH 14" width="120" height="120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
@@ -36,16 +36,150 @@
     <h2>Super-basic, drop-in CSS for your website.</h2>
     
     <p style="text-align: center; margin-top: 2rem;" class="ph14-section">
-      <a href="./css/ph14.min.css" target="_blank" role="button" style="font-size:1.4rem;">Download it here</a>
+      <a href="./css/ph14.min.css" target="_blank" role="button" style="font-size:1.4rem;">Download it</a> or <a href="https://github.com/Rainbowlemon/ph14">View it on Github</a>
     </p>
   </header>
   
   <main role="main" class="ph14-wrap">
-    <div style="padding:1px"><hr></div>
+    <section class="ph14-section">
+      <h2>Why would I want this?</h2>
+      <p>If you're working on a project that's expecting a designer later down the line, sometimes you don't want it to look absolutely terrible until then. Adding a framework like Bootstrap means having to add classes and <code>&lt;div&gt;</code>s to your code, which may all get chucked out if the designer/front-end developer prefers a different front-end framwork.</p>
+      <p>By using PH14, you can add some basic styles to your semantic HTML which can be cleaned up later down the line.</p>
+    </section>
     
-    <h2>Why would I want this framework?</h2>
-    <p>If you're working on a project that's expecting a designer later down the line, sometimes you don't want it to look absolutely terrible until then. Adding a framework like Bootstrap means having to add classes and <code>&lt;div&gt;</code>s to your code, which may all get chucked out if the designer/front-end developer prefers a different front-end framwork.</p>
-    <p>By using PH14, you can add some basic styles to your semantic HTML which can be cleaned up later down the line.</p>
+    <section class="ph14-section">
+      <h2>Does this contain a grid?</h2>
+      <p>No, purely for the fact that they generally add more front-end classes (&amp; work) to incorporate them. There are plenty of standalone grid options out there, like <a href="https://purecss.io/grids/">Pure Grids</a>, <a href="http://simplegrid.io/">Simplegrid.io</a> and <a href="http://flexboxgrid.com/">Flexbox grid</a>.</p>
+    </section>
+    
+    <article class="ph14-section">
+      <h2>Style preview:</h2>
+      
+      <div style="padding: .5rem 1.5rem; border: 3px double #ddd; margin-top: 1.2rem;">
+        <section class="ph14-section">
+          <p>A sample of <small>small text</small>, as well as <sup>sup text</sup> and <sub>sub text</sub>.</p>
+          <ul>
+            <li>A list of things</li>
+            <li>An item on the list</li>
+            <li>Another item on the list</li>
+          </ul>
+          <p>Some more paragraph text.</p>
+          <hr>
+          <p>Above is a horizontal rule.</p>
+          <div role="note">
+            This is a note (see the 'role="note"' attribute on this container). A <code>&lt;blockquote&gt;</code> tag can also be used.<br>
+            <q>This is a <code>&lt;q&gt;</code> tag.</q>
+          </div>
+          <div>
+            <a href="#2" role="button">A link with role=button</a>
+          </div>
+        </section>
+
+        <section class="ph14-section">
+          <h1><code>&lt;h1&gt;</code> header tag</h1>
+          <h2><code>&lt;h2&gt;</code> header tag</h2>
+          <h3><code>&lt;h3&gt;</code> header tag</h3>
+          <h4><code>&lt;h4&gt;</code> header tag</h4>
+          <h5><code>&lt;h5&gt;</code> header tag</h5>
+          <h6><code>&lt;h6&gt;</code> header tag</h6>
+        </section>
+
+        <section class="ph14-section">
+          <h1>Tables</h1>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Table head 1</th>
+                <th>Table head 2</th>
+                <th>Table head 3</th>
+              </tr>
+            </thead>
+
+            <tfoot>
+              <tr>
+                <td>Table foot 1</td>
+                <td>Table foot 2</td>
+                <td>Table foot 3</td>
+              </tr>
+            </tfoot>
+
+            <tbody>
+              <tr>
+                <td>Table content 1</td>
+                <td>Table content 2</td>
+                <td>Table content 3</td>
+              </tr>
+
+              <tr>
+                <td>Table content 1</td>
+                <td>Table content 2</td>
+                <td>Table content 3</td>
+              </tr>
+
+              <tr>
+                <td>Table content 1</td>
+                <td>Table content 2</td>
+                <td>Table content 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="ph14-section">
+          <h1>Forms</h1>
+
+          <form>
+            <fieldset>
+              <legend>Input fields</legend>
+
+              <div><label for="sample-text-input">Text input</label></div>
+              <input id="sample-text-input" type="text" />
+
+              <div><label for="sample-textarea">Textarea</label></div>
+              <textarea id="sample-textarea"></textarea>
+
+              <div class="ph14-spacer">
+                <label style="width: 25%" for="sample-checkbox-1">
+                  <input id="sample-checkbox-1" type="checkbox" name="sample-checkboxes" />
+                  Checkbox 1
+                </label>
+
+                <label style="width: 25%" for="sample-checkbox-2">
+                  <input id="sample-checkbox-2" type="checkbox" name="sample-checkboxes" />
+                  Checkbox 2
+                </label>
+              </div>
+
+              <div>
+                <label style="width: 25%" for="sample-radio-1">
+                  <input id="sample-radio-1" type="radio" name="sample-radios" />
+                  Radio 1
+                </label>
+
+                <label style="width: 25%" for="sample-radio-2">
+                  <input id="sample-radio-2" type="radio" name="sample-radios" />
+                  Radio 2
+                </label>
+              </div>
+
+            </fieldset>
+
+            <div class="ph14-spacer">
+              <div><label for="sample-select">Select box</label></div>
+              <select id="sample-select">
+                <option>A sample option</option>
+                <option>A sample option</option>
+                <option>A sample option</option>
+                <option>A sample option</option>
+              </select>
+            </div>
+
+            <button type="submit">A submit button</button> or <a href="#">cancel</a>
+          </form>
+        </section>
+      </div>
+    </article>
   </main>
 </body>
 </html>
