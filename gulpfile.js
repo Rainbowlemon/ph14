@@ -33,14 +33,9 @@ const sassOptions = {
  * -----------------------
  */
 
-var logSassError = function(err){
-  console.log('SASS error: ' + err);
-}
-
 gulp.task('sass', function(){
   return gulp.src(cssSrc)
     .pipe(sass())
-    .on('error', logSassError)
     .pipe(sourcemaps.init())
     .pipe(autoprefixer())
     .pipe(cleanCSS({

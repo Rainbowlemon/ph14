@@ -2,8 +2,12 @@ ol,
 ul {
   list-style: disc;
   list-style-position: outside;
-  margin: 1.4rem 0 1.4rem 1rem;
+  margin: 1.4rem 0 1.4rem 1.2rem;
   padding: 0;
+}
+
+ol {
+  list-style: decimal;
 }
 
 nav ol,
@@ -13,4 +17,6 @@ nav ul {
 
 li {
   margin-bottom: .2rem;
+  padding-left: .2rem;
+  margin-left: 1rem;
 }

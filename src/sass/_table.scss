@@ -18,8 +18,14 @@ thead tr + tr th {
   border-top: 1px solid $border-color;
 }
 
-tbody tr:nth-child(odd) td {
-  background: $bg-light;
+tbody {
+  tr:nth-child(odd) td {
+    background: $bg-light;
+  }
+
+  tr:hover td {
+    background: darken($bg-light, 4%);
+  }
 }
 
 tfoot {

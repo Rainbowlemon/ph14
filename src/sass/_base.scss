@@ -13,24 +13,31 @@ body {
   overflow: auto;
 }
 
+hr {
+  margin: 1.5rem 0;
+  background: transparent;
+  border-width: 1px 0 0;
+  border-color: $border-color transparent transparent;
+  border-style: solid;
+}
+
+[role=main] {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
 .ph14-wrap {
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .ph14-section {
-  padding: 1rem 0 .5rem;
-  
-  > h1,
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6 {
-    &:first-child {
-      margin-top: 0;
-    }
-  }
+  margin: 0 0 3rem;
+}
+
+.ph14-spacer {
+  margin: 0 0 1rem;
 }
