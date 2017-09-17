@@ -84,7 +84,7 @@ button,
   padding: .5rem 1rem;
   line-height: 1.4;
   border: 0;
-  outline: 0;
+  outline: 0 !important;
   background: $primary;
   color: #fff !important;
   text-decoration: none !important;

@@ -15,5 +15,6 @@ There are a few small helper classes just in case you need to move a few things 
 Semantic HTML5 includes ['ARIA roles'](https://www.w3.org/TR/html-aria/) which tell screen readers what the HTML element does. This CSS framework uses those roles for some basic style enhancements, as follows:
 
 - `role="main"` - The main content of your document, ideally on a `<main>` tag. Adds top and bottom padding to give breathing space to the content and make it easier to read.
-- `role="note"` - Adds a 'quote' style to the element
-- `role="button"` - Adds a button style
+- `header[role="banner"]` - Adding a header tag with `role="banner"` will add a large banner hero. This works best as the top of the page, outside of your `<main>` tag.
+- `role="note"` - Adds a 'quote' style to the element.
+- `role="button"` - Adds a button style.
